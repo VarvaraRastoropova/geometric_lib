@@ -94,7 +94,7 @@ def area(a, h):
 Example of a function call:
 ```
 >>> area(3, 4)
-6
+6.0
 ```
 Creating a function that returns the value of the triangle perimeter.
 ```
