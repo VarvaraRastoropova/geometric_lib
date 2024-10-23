@@ -109,13 +109,13 @@ Example of a function call:
 
 ## Project modification history
 Hash of the commit:
-b73a7c8eb0f82ef8e4da690d18a46c3fd152ac91
+[b73a7c8eb0f82ef8e4da690d18a46c3fd152ac91](https://github.com/VarvaraRastoropova/geometric_lib/commit/b73a7c8eb0f82ef8e4da690d18a46c3fd152ac91)
 File rectangle.py added.
 
 Hash of the commit:
- f7712b336fdb978e1a26e741a161384b81ef1eb1
+[f7712b336fdb978e1a26e741a161384b81ef1eb1](https://github.com/VarvaraRastoropova/geometric_lib/commit/f7712b336fdb978e1a26e741a161384b81ef1eb1)
 The file rectangle.py corrected ```return a + b``` to ```return 2 * (a + b)``` because there was an incorrect formula.
 
 Hash of the commit:
-8ba9aeb3cea847b63a91ac378a2a6db758682460
+[8ba9aeb3cea847b63a91ac378a2a6db758682460](https://github.com/VarvaraRastoropova/geometric_lib/commit/8ba9aeb3cea847b63a91ac378a2a6db758682460)
 File circle.py added.
