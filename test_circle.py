@@ -12,13 +12,13 @@ class CircleTestCase(unittest.TestCase):
         self.assertEqual(res, 28.274333882308138)
         
     def test_mul2(self):
-        res = area(9)
-        self.assertEqual(res, 254.46900494077323)
+        res = area(-9)
+        self.assertEqual(res, 0)
 
     def test_add1(self):
         res = perimeter(3)
         self.assertEqual(res, 18.84955592153876)
 
     def test_add2(self):
-        res = perimeter(8)
-        self.assertEqual(res, 50.26548245743669)
+        res = perimeter(-8)
+        self.assertEqual(res, 0)
