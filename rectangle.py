@@ -3,6 +3,8 @@ def area(a, b):
     >>> area(3, 4)
         12
     '''
+    if a < 0 or b < 0:
+        return 0
     return a * b 
 
 def perimeter(a, b):
@@ -10,5 +12,7 @@ def perimeter(a, b):
     >>> perimeter(3, 4)
     14
     '''
+    if a < 0 or b < 0:
+        return 0
     return 2 * (a + b)
 
