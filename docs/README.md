@@ -107,6 +107,20 @@ Example of a function call:
 13
 ```
 
+## Tests
+Similar tests have been created for all files, checking the input data for the correctness: 
+```
+def test_mul2(self):
+        res = area(-9, 5)
+        self.assertEqual(res, 0)
+```
+and correctness of the program:
+```
+def test_mul1(self):
+        res = area(3, 4)
+        self.assertEqual(res, 12)
+``` 
+
 ## Project modification history
 Hash of the commit:
 [b73a7c8eb0f82ef8e4da690d18a46c3fd152ac91](https://github.com/VarvaraRastoropova/geometric_lib/commit/b73a7c8eb0f82ef8e4da690d18a46c3fd152ac91)
@@ -119,3 +133,7 @@ The file rectangle.py corrected ```return a + b``` to ```return 2 * (a + b)``` b
 Hash of the commit:
 [8ba9aeb3cea847b63a91ac378a2a6db758682460](https://github.com/VarvaraRastoropova/geometric_lib/commit/8ba9aeb3cea847b63a91ac378a2a6db758682460)
 File circle.py added.
+
+Hash of the commit:
+[0afe3289b22fafd52e933d7e05c9b017a97dbfe1](https://github.com/VarvaraRastoropova/geometric_lib/commit/0afe3289b22fafd52e933d7e05c9b017a97dbfe1)
+Tests added.
