@@ -12,13 +12,13 @@ class SquareTestCase(unittest.TestCase):
         self.assertEqual(res, 9)
         
     def test_mul2(self):
-        res = area(9)
-        self.assertEqual(res, 81)
+        res = area(-9)
+        self.assertEqual(res, 0)
 
     def test_add1(self):
         res = perimeter(3)
         self.assertEqual(res, 12)
 
     def test_add2(self):
-        res = perimeter(8)
-        self.assertEqual(res, 32)
+        res = perimeter(-8)
+        self.assertEqual(res, 0)
