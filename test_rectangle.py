@@ -12,13 +12,13 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 12)
         
     def test_mul2(self):
-        res = area(9, 5)
-        self.assertEqual(res, 45)
+        res = area(-9, 5)
+        self.assertEqual(res, 0)
 
     def test_add1(self):
         res = perimeter(3, 4)
         self.assertEqual(res, 14)
 
     def test_add2(self):
-        res = perimeter(8, 5)
-        self.assertEqual(res, 26)
+        res = perimeter(8, -5)
+        self.assertEqual(res, 0)
