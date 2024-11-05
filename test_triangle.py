@@ -8,8 +8,8 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 0.0)
 
     def test_mul1(self):
-        res = area(10, 10)
-        self.assertEqual(res, 50.0)
+        res = area(10, -10)
+        self.assertEqual(res, 0)
         
     def test_mul2(self):
         res = area(3, 4)
@@ -20,5 +20,5 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 20)
 
     def test_add2(self):
-        res = perimeter(3, 5, 5)
-        self.assertEqual(res, 13)
+        res = perimeter(3, -5, 5)
+        self.assertEqual(res, 0)
