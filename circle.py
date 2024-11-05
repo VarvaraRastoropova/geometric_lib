@@ -6,6 +6,8 @@ def area(r):
     >>> area(3)
         28.274333882308138
     '''
+    if r < 0:
+        return 0
     return math.pi * r * r
 
 def perimeter(r):
@@ -13,5 +15,7 @@ def perimeter(r):
     >>> perimeter(3)
         18.84955592153876
     '''
+    if r < 0:
+        return 0
     return 2 * math.pi * r
 
