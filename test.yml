@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [ "laba2docs_416735" ]
+  pull_request:
+    branches: [ "laba2docs_416735" ]
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests for circle.py
+        run: |
+          pytest tests/test_circle.py --verbose
+
+      - name: Run tests for square.py
+        run: |
+          pytest tests/test_square.py --verbose
+
+      - name: Run tests for triangle.py
+        run: |
+          pytest tests/test_triangle.py --verbose
+
+      - name: Run tests for rectangle.py
+        run: |
+          pytest tests/test_rectangle.py --verbose
+ 
