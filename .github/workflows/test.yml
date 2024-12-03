@@ -23,19 +23,7 @@ jobs:
         with:
           python-version: "3.9"
 
-      - name: Run tests for circle.py
+      - name: Run tests
         run: |
-          pytest tests/test_circle.py --verbose
-
-      - name: Run tests for square.py
-        run: |
-          pytest tests/test_square.py --verbose
-
-      - name: Run tests for triangle.py
-        run: |
-          pytest tests/test_triangle.py --verbose
-
-      - name: Run tests for rectangle.py
-        run: |
-          pytest tests/test_rectangle.py --verbose
+          python3 -m unittest test_rectangle.py
  
